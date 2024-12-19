@@ -81,8 +81,11 @@ public class Perfumaria {
 			         perfume.cadastrar(new Perfume(cod, nome, marca, tipo, preco));
 				}
 				case 2 -> {
+					leia.nextLine();
+					System.out.println("\nDigite o ambiente do Perfume: ");
+				    ambiente = leia.nextLine();
+				    
 			         perfume.cadastrar(new PerfumeAmbiente(cod, nome, marca, tipo, preco, ambiente));
-			         ambiente = leia.nextLine();
 				}
 				}
 					
@@ -133,13 +136,13 @@ public class Perfumaria {
 			         perfume.atualizar(new Perfume(cod, nome, marca, tipo, preco));
 				}
 				case 2 -> {
-			         perfume.atualizar(new PerfumeAmbiente(cod, nome, marca, tipo, preco, ambiente));
-			         ambiente = leia.nextLine();
+					leia.nextLine();
+					System.out.println("\nDigite o ambiente do Perfume: ");
+				    ambiente = leia.nextLine();
+			        perfume.atualizar(new PerfumeAmbiente(cod, nome, marca, tipo, preco, ambiente));
 				}
 				}
 				
-				
-                perfume.atualizar(new Perfume(cod, nome, marca, tipo, preco));
 				
 				keyPress();
 				break;
