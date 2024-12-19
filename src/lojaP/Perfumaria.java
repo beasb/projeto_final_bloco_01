@@ -1,10 +1,19 @@
 package lojaP;
 
 import java.util.Scanner;
+import lojaP.model.Perfume;
+import lojaP.model.PerfumeAmbiente;
 
 public class Perfumaria {
 
 	public static void main(String[] args) {
+		
+		Perfume p1 = new Perfume(02, "Mad", "Chanel", "Eau Toilette", 1500.0);
+		p1.visualizar();
+		
+		PerfumeAmbiente p2 = new PerfumeAmbiente(12, "Ross", "Le Labo", "Eau Toilette", 3500.0, "Cozinha");
+		p2.visualizar(); 
+
 		
 		Scanner leia = new Scanner(System.in);
 		
