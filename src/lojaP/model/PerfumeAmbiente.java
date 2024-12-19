@@ -4,7 +4,7 @@ public class PerfumeAmbiente extends Perfume {
 	
 	private String ambiente;
 
-	public PerfumeAmbiente(int cod, String nome, String marca, String tipo, Double preco, String ambiente) {
+	public PerfumeAmbiente(int cod, String nome, String marca, int tipo, Double preco, String ambiente) {
 		super(cod, nome, marca, tipo, preco);
 		this.ambiente = ambiente;
 	}

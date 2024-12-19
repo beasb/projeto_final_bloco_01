@@ -5,10 +5,10 @@ public class Perfume {
 	private int cod;
 	private String nome;
 	private String marca;
-	private String tipo;
+	private int tipo;
 	private Double preco;
 	
-	public Perfume(int cod, String nome, String marca, String tipo, Double preco) {
+	public Perfume(int cod, String nome, String marca, int tipo, Double preco) {
 		this.cod = cod;
 		this.nome = nome;
 		this.marca = marca;
@@ -34,10 +34,10 @@ public class Perfume {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	public String getTipo() {
+	public int getTipo() {
 		return tipo;
 	}
-	public void setTipo(String tipo) {
+	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
 	public Double getPreco() {
@@ -55,7 +55,7 @@ public void visualizar() {
 		System.out.println("Código do Perfume: " + this.cod);
 		System.out.println("Nome do Perfume: " + this.nome);
 		System.out.println("Marca do Perfume: " + this.marca);
-		System.out.println("Tipo do Perfume: " + tipo);
+		System.out.println("Tipo do Perfume: " + this.tipo);
 		System.out.println("Preço do Perfume: " + this.preco);
 	}
 
